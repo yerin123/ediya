@@ -6,6 +6,12 @@ setInterval(function(){
   })
 },4500);
 
+$(".main > li, .bg").mouseenter(function(){
+  $(".sub, .bg").stop().slideDown("fast");
+});
 
+$(".main > li, .bg").mouseleave(function(){
+  $(".sub, .bg").stop().slideUp("fast");
+})
 
 })

@@ -52,6 +52,7 @@ header .login ul li{
 }
 
 nav ul{
+  text-align: center;
   margin:auto;
   width:1200px;
   display: flex;
@@ -59,9 +60,45 @@ nav ul{
   font-size:18px;
 }
 
-nav ul li{
+nav > .wrap > .main > li{
   margin:18px;
+  width:150px;
+  position:relative;
 }
+
+.main > li:hover{
+  border-bottom:1px solid #666;
+}
+
+.sub{
+  position:absolute;
+  width:100%; 
+  text-align: center;
+  z-index:2;
+  display:none;
+}
+
+.sub > li{
+  width:auto;  
+  display:flex;
+  justify-content: space-around;
+  margin:15px;
+}
+
+.sub > li:hover{ 
+  width:auto; 
+  border-bottom:1px solid #666;
+}
+
+nav .bg{
+  width:100%;
+  height:230px;
+  background-color:rgba(255, 255, 255, 0.5);
+  position:absolute;
+  z-index: 1;
+  display:none;
+}
+
 
 .banner{
   width:1920px;
@@ -165,6 +202,7 @@ nav ul li{
   z-index:3;
 }
 
+
 .recommendation .menu li a{
   width:100%;
   height:100%;
@@ -188,7 +226,7 @@ nav ul li{
   font-weight: bold;
   text-align: center;
   color: #002f6c;
-  padding:70px 50px;
+  padding:70px 20px;
   z-index:1;
 }
 
